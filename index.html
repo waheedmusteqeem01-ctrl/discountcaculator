@@ -11,7 +11,7 @@
   <div class="container">
     <div class="calculator">
       <div class="header">
-        <form>
+        <div class="form">
           <label for="bill" class="input-group">
             <p>
               BILL AMOUNT
@@ -20,17 +20,17 @@
           </label>
           <label for="percentage">
             <p>DISCOUNT PERCENTAGE</p>
-            <input type="number">
+            <input type="number" id="discount">
           </label>
-          <button type="submit">
-
+          <button class="calculate" onclick="calculatediscount()">
+            CALCULATE
           </button>
-        </form>
-        <div class="result-box">
+        </div>
+        <div class="result-box " id="result-discount">
           <div class="result-discount">
             <p>YOUR DISCOUNT WILL APPEAR HERE</p>
           </div>
-          <div class="result-total">
+          <div class="result-total" id="result-total">
             <p>YOUR TOTAL WILL APPEAR HERE</p>
           </div>
         </div>
